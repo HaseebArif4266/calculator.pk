@@ -101,9 +101,11 @@ nav{
 .calculator-input{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .calculator-input input{
+    display: flex;
     border: none;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     height: 60px;
@@ -651,131 +653,130 @@ nav{
 
 @media only screen and (max-width: 768px){
     nav.active{
-        height: 240px;
+        height: 240px;   }
+
+    .navbar-links a{
+        margin: 10px 0 0 0;
     }
-}
 
-.navbar-links a{
-    margin: 10px 0 0 0;
-}
+    .navbar-links{
+        display: none;
+    }
 
-.navbar-links{
-    display: none;
-}
+    .navbar-links.active{
+        display: flex;
+        position: absolute;
+        left: 0;
+        top: 80px;
+        flex-direction: column;
+    }
 
-.navbar-links.active{
-    display: flex;
-    position: absolute;
-    left: 0;
-    top: 80px;
-    flex-direction: column;
-}
+    .navbar-burger{
+        height: 18px;
+        width: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
-.navbar-burger{
-    height: 18px;
-    width: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+    .navbar-burger div{
+        height: 3px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 1);
+    }
 
-.navbar-burger div{
-    height: 3px;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 1);
-}
+    .calculator-input{
+        flex-direction: column;
+    }
 
-.calculator-input{
-    flex-direction: column;
-}
-.calculator-container{
-    margin: 100px 0;
-}
+    .calculator-container{
+        margin: 100px 0;
+    }
 
-.calculator-input select{
-    margin: 20px 0;
-}
+    .calculator-input select{
+        margin: 20px 0;
+    }
 
-.calculator-container p{
-    text-align: center;
-}
+    .calculator-container p{
+        text-align: center;
+    }
 
-.calculation-result-container{
-    flex-direction: column;
-}
+    .calculation-result-container{
+        flex-direction: column;
+    }
 
-.calculation-result-content{
-    width: 100%;
-}
+    .calculation-result-content{
+        width: 100%;
+    }
 
-.calculation-result-content-container{
-    flex-direction: column;
-    align-items: center;
-}
+    .calculation-result-content-container{
+        flex-direction: column;
+        align-items: center;
+    }
 
-.calculation-result-box{
-    margin-top: 20px;
-    width: 100%;
-}
+    .calculation-result-box{
+        margin-top: 20px;
+        width: 100%;
+    }
 
-.calculation-chart-tax{
-    width: 100%;
-}
+    .calculation-chart-tax{
+        width: 100%;
+    }
 
-.calculation-chart-tax-slab-header{
-    text-align: center;
-}
+    .calculation-chart-tax-slab-header{
+        text-align: center;
+    }
 
-.calculation-chart-tax-slab-para{
-    text-align: center;
-}
+    .calculation-chart-tax-slab-para{
+        text-align: center;
+    }
 
-.calculation-chart-container{
-    width: 300px;
-}
+    .calculation-chart-container{
+        width: 300px;
+    }
 
-.calculation-chart-tax-container{
-    flex-direction: column;
-}
+    .calculation-chart-tax-container{
+        flex-direction: column;
+    }
 
-.calculation-chart-tax-box{
-    margin-top: 20px;
-}
+    .calculation-chart-tax-box{
+        margin-top: 20px;
+    }
 
-.tax-links-container{
-    flex-direction: column;
-}
+    .tax-links-container{
+        flex-direction: column;
+    }
 
-.tax-links-documents{
-    margin-bottom: 100px;
-}
+    .tax-links-documents{
+        margin-bottom: 100px;
+    }
 
-.tax-links-download{
-    flex-direction: column;
-    align-items: center;
-}
+    .tax-links-download{
+        flex-direction: column;
+        align-items: center;
+    }
 
-.tax-links-download a{
-    margin: 0 0 5px 0;
-}
+    .tax-links-download a{
+        margin: 0 0 5px 0;
+    }
 
-.contact-content-container{
-    flex-direction: column;
-    width: 90%;
-}
+    .contact-content-container{
+        flex-direction: column;
+        width: 90%;
+    }
 
-.contact-content-right{
-    width: 100%;
-}
+    .contact-content-right{
+        width: 100%;
+    }
 
-.contact-content-left{
-    width: 100%;
-}
+    .contact-content-left{
+        width: 100%;
+    }
 
-.contact-content-left h1{
-    margin-top: 20px;
-}
+    .contact-content-left h1{
+        margin-top: 20px;
+    }
 
-.contact-content-left p{
-    text-align: center;
-}
+    .contact-content-left p{
+        text-align: center;
+     }
